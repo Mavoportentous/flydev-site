@@ -6,7 +6,7 @@ export default async function Home() {
   const services = await getServices();
 
   return (
-    <main className="relative min-h-screen flex flex-col overflow-hidden bg-fly-dark text-white">
+    <main className="relative min-h-[100dvh] flex flex-col overflow-hidden bg-fly-dark text-white selection:bg-fly-cyan/30 selection:text-white pb-16">
       {/* El fondo interactivo */}
       <ParticlesBackground />
 

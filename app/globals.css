@@ -1,5 +1,11 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-fly-dark: #0a0f1a;
+  --color-fly-cyan: #22d3ee;
+  --color-fly-orange: #f97316;
+  --color-fly-glow: #d1fae5;
+}
 
 :root {
   --foreground-rgb: 255, 255, 255;
@@ -15,9 +21,17 @@ body {
 
 /* El efecto de luz blanquiazul que pediste */
 @keyframes click-glow {
-  0% { box-shadow: 0 0 0px 0px rgba(34, 211, 238, 0); }
-  50% { box-shadow: 0 0 30px 15px rgba(209, 250, 225, 0.6); }
-  100% { box-shadow: 0 0 0px 0px rgba(34, 211, 238, 0); }
+  0% {
+    box-shadow: 0 0 0px 0px rgba(34, 211, 238, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 30px 15px rgba(209, 250, 225, 0.6);
+  }
+
+  100% {
+    box-shadow: 0 0 0px 0px rgba(34, 211, 238, 0);
+  }
 }
 
 .tap-glow:active {
