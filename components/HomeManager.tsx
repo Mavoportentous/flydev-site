@@ -61,7 +61,7 @@ export default function HomeManager({ services }: HomeManagerProps) {
                     Desarrollo web de alto impacto y cinematografía aérea profesional.
                 </p>
                 <div className="inline-block relative">
-                    <span className="text-white/80 text-sm md:text-base font-bold uppercase tracking-[0.3em] bg-white/5 py-2 px-6 rounded-full border border-white/10 backdrop-blur-sm">
+                    <span className="text-white/80 text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] bg-white/5 py-2 px-4 sm:px-6 rounded-full border border-white/10 backdrop-blur-sm">
                         Selecciona tu experiencia
                     </span>
                 </div>
