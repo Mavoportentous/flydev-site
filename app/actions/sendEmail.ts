@@ -87,18 +87,18 @@ export async function sendContactEmail(data: ContactFormData) {
     const [adminEmailResult, clientEmailResult] = await Promise.all([
       // Correo para ti (Administrador)
       resend.emails.send({
-        from: \`Flydev Web <\${FROM_EMAIL}>\`,
+        from: `Flydev Web <${FROM_EMAIL}>`,
         to: ADMIN_EMAIL,
         replyTo: data.email, // Si le das a "Responder", le contestas al cliente
-        subject: \`🔥 Nuevo Presupuesto: \${data.serviceTitle} - \${data.name}\`,
+        subject: `🔥 Nuevo Presupuesto: ${data.serviceTitle} - ${data.name}`,
         html: adminHtmlTemplate,
       }),
       
       // Correo de confirmación automática para el Cliente
       resend.emails.send({
-        from: \`Flydev <\${FROM_EMAIL}>\`,
+        from: `Flydev <${FROM_EMAIL}>`,
         to: data.email, // Correo del cliente
-        subject: \`Hemos recibido tu solicitud - Flydev\`,
+        subject: `Hemos recibido tu solicitud - Flydev`,
         html: clientHtmlTemplate,
       })
     ]);
