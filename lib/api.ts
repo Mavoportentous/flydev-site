@@ -102,3 +102,10 @@ export async function getServices(): Promise<Service[]> {
     return MOCK_SERVICES; // Fallback to mock data on error
   }
 }
+
+export async function getServiceBySlug(slug: string): Promise<Service | null> {
+  // Try to find the service in mock data first (or fetch from API later)
+  const allServices = await getServices();
+  const service = allServices.find(s => s.link?.endsWith(`/${slug}`));
+  return service || null;
+}
