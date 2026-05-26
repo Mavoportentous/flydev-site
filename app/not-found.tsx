@@ -12,7 +12,7 @@ export default function NotFound() {
             <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-fly-orange/30 to-transparent rounded-full pointer-events-none opacity-40 animate-pulse" />
 
             {/* Contenedor Principal con Glassmorphism */}
-            <div className="relative z-10 w-full max-w-2xl p-8 md:p-16 rounded-[3rem] border border-white/10 bg-[#0f172a]/50 backdrop-blur-2xl shadow-2xl flex flex-col items-center text-center animate-in fade-in zoom-in duration-700">
+            <div className="relative z-10 w-full max-w-2xl p-8 md:p-16 rounded-[3rem] border border-white/10 bg-[#0f172a]/50 backdrop-blur-md shadow-2xl flex flex-col items-center text-center animate-in fade-in zoom-in duration-700">
 
                 {/* Icono animado */}
                 <div className="relative w-24 h-24 md:w-32 md:h-32 mb-8 rounded-3xl flex items-center justify-center bg-white/5 border border-white/10 shadow-inner group">
@@ -38,7 +38,7 @@ export default function NotFound() {
 
                 <Link
                     href="/"
-                    className="group flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full text-white font-semibold hover:bg-white/20 hover:border-white/40 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+                    className="group flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-white font-semibold hover:bg-white/20 hover:border-white/40 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transform group-hover:-translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />

@@ -48,7 +48,7 @@ export default function ServicesSection({ services, category, title }: ServicesS
                     return (
                         <div
                             key={service.id}
-                            className={`group relative p-10 rounded-[2.5rem] border border-white/10 bg-[#0f172a]/40 backdrop-blur-xl 
+                            className={`group relative p-10 rounded-[2.5rem] border border-white/10 bg-[#0f172a]/40 backdrop-blur-md 
                 transition-all duration-500 ease-out hover:-translate-y-3 ${borderColor} ${shadowColor} overflow-hidden flex flex-col`}
                         >
                             {/* Decorative Background Blob */}

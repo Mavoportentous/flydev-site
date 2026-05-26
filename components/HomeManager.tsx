@@ -27,7 +27,7 @@ export default function HomeManager({ services }: HomeManagerProps) {
                 <div className="sticky top-4 z-50 mb-8 mt-4 px-6 flex justify-start">
                     <button
                         onClick={handleBack}
-                        className="group flex items-center gap-3 px-6 py-3 bg-black/50 backdrop-blur-xl border border-white/10 rounded-full text-white/80 hover:text-white hover:border-white/30 hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-white/5"
+                        className="group flex items-center gap-3 px-6 py-3 bg-black/50 backdrop-blur-md border border-white/10 rounded-full text-white/80 hover:text-white hover:border-white/30 hover:bg-white/10 transition-all duration-300 shadow-lg hover:shadow-white/5"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transform group-hover:-translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
@@ -73,7 +73,7 @@ export default function HomeManager({ services }: HomeManagerProps) {
                 {/* Web Dev Card */}
                 <SpotlightCard
                     spotlightColor="rgba(34, 211, 238, 0.4)"
-                    className="group cursor-pointer w-full max-w-[340px] md:max-w-none md:aspect-[4/3] !bg-[#0f172a]/60 backdrop-blur-xl border-white/10 hover:border-fly-cyan/30 transition-all duration-500 shadow-2xl hover:shadow-fly-cyan/20"
+                    className="group cursor-pointer w-full max-w-[340px] md:max-w-none md:aspect-[4/3] !bg-[#0f172a]/60 backdrop-blur-md border-white/10 hover:border-fly-cyan/30 transition-all duration-500 shadow-2xl hover:shadow-fly-cyan/20"
                     onClick={() => setView('web')}
                 >
                     <div className="p-8 md:p-12 h-full flex flex-col items-center text-center justify-center gap-6 relative overflow-hidden">
@@ -107,7 +107,7 @@ export default function HomeManager({ services }: HomeManagerProps) {
                 {/* Drone Services Card */}
                 <SpotlightCard
                     spotlightColor="rgba(249, 115, 22, 0.4)"
-                    className="group cursor-pointer w-full max-w-[340px] md:max-w-none md:aspect-[4/3] !bg-[#0f172a]/60 backdrop-blur-xl border-white/10 hover:border-fly-orange/30 transition-all duration-500 shadow-2xl hover:shadow-fly-orange/20"
+                    className="group cursor-pointer w-full max-w-[340px] md:max-w-none md:aspect-[4/3] !bg-[#0f172a]/60 backdrop-blur-md border-white/10 hover:border-fly-orange/30 transition-all duration-500 shadow-2xl hover:shadow-fly-orange/20"
                     onClick={() => setView('drone')}
                 >
                     <div className="p-8 md:p-12 h-full flex flex-col items-center text-center justify-center gap-6 relative overflow-hidden">

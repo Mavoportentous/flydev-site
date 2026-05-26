@@ -18,7 +18,7 @@ export default function ParticlesBackground() {
     }, []);
 
     const options: ISourceOptions = {
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
             events: {
                 onClick: {
@@ -65,7 +65,7 @@ export default function ParticlesBackground() {
                 straight: false,
             },
             number: {
-                value: 100,
+                value: 40,
                 limit: {
                     value: 250,
                 },

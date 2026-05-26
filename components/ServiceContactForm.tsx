@@ -54,7 +54,7 @@ export default function ServiceContactForm({ isWeb, serviceTitle }: ServiceConta
           </p>
         </div>
 
-        <div className={`p-8 md:p-12 rounded-[2.5rem] bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 shadow-2xl relative overflow-hidden`}>
+        <div className={`p-8 md:p-12 rounded-[2.5rem] bg-[#0f172a]/60 backdrop-blur-md border border-white/10 shadow-2xl relative overflow-hidden`}>
           {/* Subtle Glow */}
           <div className={`absolute top-0 right-0 w-64 h-64 opacity-20 pointer-events-none rounded-full bg-gradient-radial ${isWeb ? 'from-fly-cyan/30' : 'from-fly-orange/30'} to-transparent`} />
           

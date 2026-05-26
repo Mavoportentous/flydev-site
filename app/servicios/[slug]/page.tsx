@@ -65,7 +65,7 @@ export default async function ServicePage({ params }: Props) {
         
         {/* Left Column: Icon & Visuals */}
         <div className="w-full lg:w-5/12 flex justify-center lg:justify-end animate-in fade-in zoom-in duration-700">
-          <div className={`relative w-64 h-64 md:w-96 md:h-96 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-xl flex items-center justify-center p-12 ${shadowAccent} transition-all duration-700 group`}>
+          <div className={`relative w-64 h-64 md:w-96 md:h-96 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-md flex items-center justify-center p-12 ${shadowAccent} transition-all duration-700 group`}>
             <div className={`absolute inset-0 rounded-[3rem] opacity-0 group-hover:opacity-40 transition-opacity duration-700 bg-gradient-radial ${bgGradientRadial} to-transparent`} />
             <svg 
               className={`w-full h-full ${accentColor} drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] transform group-hover:scale-110 transition-transform duration-700 ease-out`} 
