@@ -8,8 +8,8 @@ export default function NotFound() {
             <ParticlesBackground />
 
             {/* Background Glows decorativos */}
-            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-fly-cyan/10 rounded-full blur-[120px] pointer-events-none opacity-40 animate-pulse" />
-            <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-fly-orange/10 rounded-full blur-[120px] pointer-events-none opacity-40 animate-pulse" />
+            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-radial from-fly-cyan/30 to-transparent rounded-full pointer-events-none opacity-40 animate-pulse" />
+            <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-radial from-fly-orange/30 to-transparent rounded-full pointer-events-none opacity-40 animate-pulse" />
 
             {/* Contenedor Principal con Glassmorphism */}
             <div className="relative z-10 w-full max-w-2xl p-8 md:p-16 rounded-[3rem] border border-white/10 bg-[#0f172a]/50 backdrop-blur-2xl shadow-2xl flex flex-col items-center text-center animate-in fade-in zoom-in duration-700">

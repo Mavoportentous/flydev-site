@@ -43,12 +43,13 @@ export default async function ServicePage({ params }: Props) {
   const gradientText = isWeb ? 'from-fly-cyan to-white' : 'from-fly-orange to-white';
   const shadowAccent = isWeb ? 'shadow-[0_0_40px_rgba(34,211,238,0.2)]' : 'shadow-[0_0_40px_rgba(249,115,22,0.2)]';
   const buttonBgHover = isWeb ? 'hover:bg-fly-cyan/20' : 'hover:bg-fly-orange/20';
+  const bgGradientRadial = isWeb ? 'from-fly-cyan/30' : 'from-fly-orange/30';
 
   return (
     <div className="min-h-[100dvh] bg-fly-dark text-white selection:bg-white/10 relative overflow-hidden flex flex-col">
       {/* Background Effects */}
-      <div className={`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full blur-[150px] opacity-20 pointer-events-none ${bgAccent}`} />
-      <div className={`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full blur-[150px] opacity-10 pointer-events-none ${bgAccent}`} />
+      <div className={`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full opacity-30 pointer-events-none bg-gradient-radial ${bgGradientRadial} to-transparent`} />
+      <div className={`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full opacity-20 pointer-events-none bg-gradient-radial ${bgGradientRadial} to-transparent`} />
       
       {/* Navigation */}
       <nav className="relative z-50 w-full p-6 lg:px-12 flex justify-start items-center">
@@ -65,7 +66,7 @@ export default async function ServicePage({ params }: Props) {
         {/* Left Column: Icon & Visuals */}
         <div className="w-full lg:w-5/12 flex justify-center lg:justify-end animate-in fade-in zoom-in duration-700">
           <div className={`relative w-64 h-64 md:w-96 md:h-96 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-xl flex items-center justify-center p-12 ${shadowAccent} transition-all duration-700 group`}>
-            <div className={`absolute inset-0 rounded-[3rem] opacity-0 group-hover:opacity-20 transition-opacity duration-700 blur-xl ${bgAccent}`} />
+            <div className={`absolute inset-0 rounded-[3rem] opacity-0 group-hover:opacity-40 transition-opacity duration-700 bg-gradient-radial ${bgGradientRadial} to-transparent`} />
             <svg 
               className={`w-full h-full ${accentColor} drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] transform group-hover:scale-110 transition-transform duration-700 ease-out`} 
               fill="none" 

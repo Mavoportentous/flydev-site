@@ -16,8 +16,8 @@ export default function ServicesSection({ services, category, title }: ServicesS
     return (
         <section className="relative z-10 py-16 px-6 max-w-[90rem] mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
             {/* Ambient Background Glows */}
-            <div className={`absolute top-0 right-0 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none opacity-20 ${isWeb ? 'bg-fly-cyan' : 'bg-fly-orange'}`} />
-            <div className={`absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none opacity-20 ${isWeb ? 'bg-fly-cyan' : 'bg-fly-orange'}`} />
+            <div className={`absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none opacity-30 bg-gradient-radial ${isWeb ? 'from-fly-cyan/30' : 'from-fly-orange/30'} to-transparent`} />
+            <div className={`absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none opacity-30 bg-gradient-radial ${isWeb ? 'from-fly-cyan/30' : 'from-fly-orange/30'} to-transparent`} />
 
             {/* Section Header */}
             <div className="text-center mb-20 relative z-10">
@@ -52,7 +52,7 @@ export default function ServicesSection({ services, category, title }: ServicesS
                 transition-all duration-500 ease-out hover:-translate-y-3 ${borderColor} ${shadowColor} overflow-hidden flex flex-col`}
                         >
                             {/* Decorative Background Blob */}
-                            <div className={`absolute -top-32 -right-32 w-64 h-64 rounded-full blur-[80px] opacity-0 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none ${isWeb ? 'bg-fly-cyan' : 'bg-fly-orange'}`} />
+                            <div className={`absolute -top-32 -right-32 w-64 h-64 rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-700 pointer-events-none bg-gradient-radial ${isWeb ? 'from-fly-cyan/40' : 'from-fly-orange/40'} to-transparent`} />
 
                             {/* Icon Container */}
                             <div className={`relative w-20 h-20 mb-8 rounded-[1.5rem] flex items-center justify-center 

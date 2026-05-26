@@ -56,7 +56,7 @@ export default function ServiceContactForm({ isWeb, serviceTitle }: ServiceConta
 
         <div className={`p-8 md:p-12 rounded-[2.5rem] bg-[#0f172a]/60 backdrop-blur-xl border border-white/10 shadow-2xl relative overflow-hidden`}>
           {/* Subtle Glow */}
-          <div className={`absolute top-0 right-0 w-64 h-64 blur-[100px] opacity-10 pointer-events-none rounded-full ${bgAccent}`} />
+          <div className={`absolute top-0 right-0 w-64 h-64 opacity-20 pointer-events-none rounded-full bg-gradient-radial ${isWeb ? 'from-fly-cyan/30' : 'from-fly-orange/30'} to-transparent`} />
           
           {status === 'success' ? (
             <div className="flex flex-col items-center justify-center py-12 text-center animate-in zoom-in duration-500">
