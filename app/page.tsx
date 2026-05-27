@@ -1,7 +1,10 @@
-import ParticlesBackground from "@/components/ParticlesBackground";
+import dynamic from "next/dynamic";
 import HomeManager from "@/components/HomeManager";
 import { getServices } from "@/lib/api";
 
+const ParticlesBackground = dynamic(() => import("@/components/ParticlesBackground"), { 
+  ssr: false 
+});
 export default async function Home() {
   const services = await getServices();
 

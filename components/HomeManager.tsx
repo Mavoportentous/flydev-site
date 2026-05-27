@@ -2,9 +2,11 @@
 "use client";
 
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import SpotlightCard from "@/components/ui/SpotlightCard";
-import ServicesSection from "@/components/ServicesSection"; // We will update this to accept props
 import { Service } from "@/lib/api";
+
+const ServicesSection = dynamic(() => import("@/components/ServicesSection"));
 
 interface HomeManagerProps {
     services: Service[];
