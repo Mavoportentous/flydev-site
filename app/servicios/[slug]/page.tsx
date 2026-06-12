@@ -23,8 +23,24 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${service.title} | FLYDEV`,
+    title: service.title,
     description: service.description,
+    alternates: {
+      canonical: service.link,
+    },
+    openGraph: {
+      type: 'website',
+      locale: 'es_MX',
+      siteName: 'FLYDEV',
+      title: `${service.title} | FLYDEV`,
+      description: service.description,
+      url: service.link,
+    },
+    twitter: {
+      card: 'summary',
+      title: `${service.title} | FLYDEV`,
+      description: service.description,
+    },
   };
 }
 
@@ -38,7 +54,6 @@ export default async function ServicePage({ params }: Props) {
 
   const isWeb = service.category === 'web';
   const accentColor = isWeb ? 'text-fly-cyan' : 'text-fly-orange';
-  const bgAccent = isWeb ? 'bg-fly-cyan' : 'bg-fly-orange';
   const borderAccent = isWeb ? 'border-fly-cyan' : 'border-fly-orange';
   const gradientText = isWeb ? 'from-fly-cyan to-white' : 'from-fly-orange to-white';
   const shadowAccent = isWeb ? 'shadow-[0_0_40px_rgba(34,211,238,0.2)]' : 'shadow-[0_0_40px_rgba(249,115,22,0.2)]';

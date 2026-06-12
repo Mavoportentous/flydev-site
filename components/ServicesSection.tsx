@@ -37,7 +37,7 @@ export default function ServicesSection({ services, category, title }: ServicesS
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12 relative z-10">
-                {services.map((service, index) => {
+                {services.map((service) => {
                     const accentColor = isWeb ? 'text-fly-cyan' : 'text-fly-orange';
                     const hoverAccent = isWeb ? 'group-hover:text-fly-cyan' : 'group-hover:text-fly-orange';
                     const borderColor = isWeb ? 'group-hover:border-fly-cyan/40' : 'group-hover:border-fly-orange/40';

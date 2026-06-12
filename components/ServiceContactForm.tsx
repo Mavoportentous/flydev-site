@@ -14,7 +14,6 @@ export default function ServiceContactForm({ isWeb, serviceTitle }: ServiceConta
   
   const accentColor = isWeb ? 'text-fly-cyan' : 'text-fly-orange';
   const borderAccent = isWeb ? 'focus:border-fly-cyan/50' : 'focus:border-fly-orange/50';
-  const bgAccent = isWeb ? 'bg-fly-cyan' : 'bg-fly-orange';
   const shadowAccent = isWeb ? 'hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]' : 'hover:shadow-[0_0_30px_rgba(249,115,22,0.2)]';
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

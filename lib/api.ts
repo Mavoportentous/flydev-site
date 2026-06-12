@@ -12,6 +12,19 @@ export interface Service {
 }
 
 const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL;
+const DEFAULT_ICON_PATH = "M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0-18 0";
+
+type WordPressPost = {
+  id: number;
+  slug: string;
+  title: {
+    rendered: string;
+  };
+  excerpt: {
+    rendered: string;
+  };
+  categories: number[];
+};
 
 // Mock data with Icons (Lucide/Heroicons style paths)
 const MOCK_SERVICES: Service[] = [
@@ -85,16 +98,17 @@ export async function getServices(): Promise<Service[]> {
       throw new Error(`Failed to fetch services: ${response.statusText}`);
     }
 
-    const posts = await response.json();
+    const posts = (await response.json()) as WordPressPost[];
 
     // Transform WP posts to Service interface
     // Note: This mapping will need adjustment based on actual WP response structure (ACF fields, etc.)
-    return posts.map((post: any) => ({
+    return posts.map((post) => ({
       id: post.id,
       title: post.title.rendered,
       description: post.excerpt.rendered.replace(/<[^>]+>/g, ''), // Strip HTML tags
       category: post.categories.includes(1) ? 'web' : 'drone', // Placeholder logic
-      link: `/servicios/${post.slug}`
+      link: `/servicios/${post.slug}`,
+      iconPath: DEFAULT_ICON_PATH,
     }));
 
   } catch (error) {
